@@ -4,6 +4,8 @@ Turn a spare USB mouse into a **media remote** on Windows — no driver rebindin
 
 While remapping is on, the selected mouse’s buttons and wheel send media keys (and don’t move the cursor). Your other mouse or touchpad still works normally. Stop remapping (or exit) and every mouse is a pointer again.
 
+![MouseMediaRemap main window](docs/screenshot.png)
+
 ## Features
 
 - Session remapping via Raw Input + a low-level mouse hook (HID drivers stay installed)
