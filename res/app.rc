@@ -1,0 +1,5 @@
+#include "resource.h"
+
+IDI_APP        ICON  "app.ico"
+IDI_TRAY_IDLE  ICON  "icon_idle.ico"
+IDI_TRAY_ACTIVE ICON "icon_active.ico"

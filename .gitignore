@@ -1,0 +1,42 @@
+# Build outputs
+/build/
+/cmake-build-*/
+/out/
+/build_log.txt
+/cmake_log.txt
+
+# IDE / editor
+/.vs/
+/.idea/
+/.vscode/
+*.user
+*.suo
+*.VC.db
+*~
+
+# Compiled objects & binaries
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.exp
+*.aps
+
+# CMake (if configured in-tree)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+.ninja_deps
+.ninja_log
+build.ninja
+
+# Local / generated junk
+*.log
+Thumbs.db
+Desktop.ini
+/MouseMediaRemap.ini

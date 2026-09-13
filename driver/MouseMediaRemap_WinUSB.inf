@@ -1,0 +1,34 @@
+; MouseMediaRemap generic WinUSB binding template.
+; Hardware IDs are injected by the binder before install.
+
+[Version]
+Signature = "$Windows NT$"
+Class = USBDevice
+ClassGuid = {88BAE032-5A81-49f0-BC3D-A4FF1384CDEE}
+Provider = %ProviderName%
+DriverVer = 03/13/2026,1.0.0.0
+CatalogFile =
+
+[Manufacturer]
+%ProviderName% = Devices,NTamd64
+
+[Devices.NTamd64]
+%DeviceName% = USB_Install, USB\VID_0000&PID_0000
+
+[USB_Install]
+Include = winusb.inf
+Needs = WINUSB.NT
+
+[USB_Install.Services]
+Include = winusb.inf
+Needs = WINUSB.NT.Services
+
+[USB_Install.HW]
+AddReg = DeviceInterface_AddReg
+
+[DeviceInterface_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{9F3A8C2E-6B1D-4E7A-9C11-B055E0ED1A01}"
+
+[Strings]
+ProviderName = "MouseMediaRemap"
+DeviceName = "MouseMediaRemap Media Mouse (WinUSB)"
